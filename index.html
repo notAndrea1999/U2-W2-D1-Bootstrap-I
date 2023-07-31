@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- i componenti principali del GRID SYSTEM di Bootstrap:
+    1) container
+    2) row
+    3) col * n (tante colonne quante servono) -->
+
+    <!-- N.B. le col devono essere figlie DIRETTE di row, altrimenti non funzionano -->
+    <!-- N.B. i margini orizzontali rompono la griglia, quelli verticali sono invece sicuri da usare -->
+    <div class="container">
+      <h1
+        class="bg-danger text-white border border-bottom-0 border-light border-opacity-50 border-5 rounded-pill mt-3 px-5 py-2"
+      >
+        Hello, world!
+      </h1>
+      <p class="text-danger d-none">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo alias ipsum quae cum voluptatibus aspernatur
+        repellat quidem expedita error a, provident vel minima doloribus nostrum harum iusto, ad ea fuga!
+      </p>
+
+      <button class="btn btn-primary rounded-pill border border-dark border-2">Sono un bottone</button>
+    </div>
+
+    <div class="container mt-5">
+      <h3>GRID SYSTEM (12 colonne)</h3>
+      <!-- row identifica l'area di una griglia -->
+      <div class="row mb-5">
+        <!-- 12 colonne disponibili -->
+        <!-- per ognuno dei nostri elementi possiamo scegliere quante colonne dedicargli -->
+        <!-- il numero di colonne usate per ciascun elemento determinerà quanti elementi visualizzeremo PER RIGA -->
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <!-- margin top/bottom è permesso 
+                margin left/right (start/end) è VIETATO in una griglia -->
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-2 mb-2">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>GRIGLIA CON ALLINEAMENTI VERTICALI</h3>
+      <div class="row align-items-center mb-5" style="min-height: 20vh; background-color: aliceblue">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo1</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo2</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo3</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo4</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>GRIGLIA CON ALLINEAMENTI ORIZZONTALI</h3>
+      <div class="row justify-content-center mb-5" style="background-color: aliceblue">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>GRIGLIA CON OFFSET ORIZZONTALI</h3>
+      <div class="row mb-5" style="background-color: aliceblue">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 offset-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>GRIGLIA CON SOTTOGRIGLIA</h3>
+      <div class="row mb-5" style="background-color: aliceblue">
+        <div class="col-12 col-sm-6 col-md-8">
+          <!-- griglia annidata -->
+          <!-- può avere una vita propria e "muoversi", tramite breakpoint, indipendentemente da come cambia quella esterna -->
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="bg-info">1</div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-info">2</div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-info">3</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="bg-info">
+            <h3>titolo</h3>
+            <p class="mb-0">lorem ipsum sit dolor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
